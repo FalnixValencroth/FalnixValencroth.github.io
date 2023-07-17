@@ -1,131 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <style>
-      
-    body {
-  background-image: "img_zen_space.gif";
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-    title, h1, p {
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-      .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        body {
+            background-image: url('img_zen_space.gif');
+            background-color: #000000;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-nav {
-  background-color: #f2f2f2;
-}
+        title, h1, p {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+        .container {
+            display: flex;
+            list-style-position: inside;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
 
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
+        nav {
+            background-color: #f2f2f2;
+        }
 
-nav a {
-  text-decoration: none;
-  color: #333;
-}
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-nav a:hover {
-  color: #ff0000;
-}
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
     </style>
-    <title class="container"> Matthew Lyons' Webpage </title>
-  </head>
-  <h1 class="container"> Welcome to my webpage. 
-  <img src="img_you_look_lonely.gif">
-  </h1>
-  <body>
-    <div class="container"> <!-- This div is for audio player -->
+    <title class="container">Matthew Lyons' Webpage</title>
+</head>
+<body>
+    <h1 class="container">
+        Welcome to my webpage.
+        <img src="img_you_look_lonely.gif">
+    </h1>
+
+    <div class="container">
         <audio id="backgroundAudio" autoplay loop>
-    <source src="1991 - Tesla Boy.mp3" type="audio/mpeg">
+            <source src="1991 - Tesla Boy.mp3" type="audio/mpeg">
         </audio>
 
-  <button id="muteButton">Mute</button>
-  <button id="pauseButton">Pause</button>
-  <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
-  
-  <script>
-    const backgroundAudio = document.getElementById('backgroundAudio');
-    const muteButton = document.getElementById('muteButton');
-    const pauseButton = document.getElementById('pauseButton');
-    const volumeControl = document.getElementById('volumeControl');
+        <button id="muteButton">Mute</button>
+        <button id="pauseButton">Pause</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
 
-    muteButton.addEventListener('click', toggleMute);
-    pauseButton.addEventListener('click', togglePause);
-    volumeControl.addEventListener('input', setVolume);
+        <script>
+            const backgroundAudio = document.getElementById('backgroundAudio');
+            const muteButton = document.getElementById('muteButton');
+            const pauseButton = document.getElementById('pauseButton');
+            const volumeControl = document.getElementById('volumeControl');
 
-    function toggleMute() {
-      if (backgroundAudio.muted) {
-        backgroundAudio.muted = false;
-        muteButton.textContent = 'Mute';
-      } else {
-        backgroundAudio.muted = true;
-        muteButton.textContent = 'Unmute';
-      }
-    }
+            muteButton.addEventListener('click', toggleMute);
+            pauseButton.addEventListener('click', togglePause);
+            volumeControl.addEventListener('input', setVolume);
 
-    function togglePause() {
-      if (backgroundAudio.paused) {
-        backgroundAudio.play();
-        pauseButton.textContent = 'Pause';
-      } else {
-        backgroundAudio.pause();
-        pauseButton.textContent = 'Play';
-      }
-    }
+            function toggleMute() {
+                if (backgroundAudio.muted) {
+                    backgroundAudio.muted = false;
+                    muteButton.textContent = 'Mute';
+                } else {
+                    backgroundAudio.muted = true;
+                    muteButton.textContent = 'Unmute';
+                }
+            }
 
-    function setVolume() {
-      backgroundAudio.volume = volumeControl.value;
-    }
-  </script>
-      
+            function togglePause() {
+                if (backgroundAudio.paused) {
+                    backgroundAudio.play();
+                    pauseButton.textContent = 'Pause';
+                } else {
+                    backgroundAudio.pause();
+                    pauseButton.textContent = 'Play';
+                }
+            }
+
+            function setVolume() {
+                backgroundAudio.volume = volumeControl.value;
+            }
+        </script>
     </div>
-<nav class="container"> <!--This is the navigation bar at the top-->
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="whoami.html">A Little About Me</a></li>
-  </ul>
-</nav>
+
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whoami.html">A Little About Me</a></li>
+        </ul>
+    </nav>
+
     <p class="container">
-      My name is Matthew Robert Lyons and I aspire to prevent needless deaths cause by conflict. The pathway to complete this, I think, is to 
-      unify peoples by removing the manipulation of data which leads to false beliefs and in turn conflict.
+        My name is Matthew Robert Lyons and I aspire to prevent needless deaths cause by conflict. The pathway to complete this, I think, is to 
+        unify peoples by removing the manipulation of data which leads to false beliefs and in turn conflict.
     </p>
+
     <p class="container">
-    The endevor that i have may seem a task fit for a God but if everyone persued the same goal, in their own way, the world would not need
-    means of human extermination.
+        The endeavor that I have may seem a task fit for a God but if everyone pursued the same goal, in their own way, the world would not need
+        means of human extermination.
     </p>
+
     <p class="container"> 
-    Some things about me:<br>
-    Likes: Good Parents, Good people, individuals who help other although they nothing<br> 
-    Disklikes: Pedophiles, Evil people, Individuals who enjoy harming others<br>
-  </o>
-    <p class="container">
-    Hobbies: <br>
-      <div class="container">
-    <li><a href="https://github.com/voicepaw/so-vits-svc-fork"> AI voice training</a></li>
-    <li><a href="https://odysee.com/@AlphaNerd:8"> Learning about technology</a></li>
-    <li><a href="https://cults3d.com/">3D printing and design</a></li><br>
-      </div>
+        Some things about me:<br>
+        Likes: Good Parents, Good people, individuals who help other although they nothing<br> 
+        Dislikes: Pedophiles, Evil people, Individuals who enjoy harming others<br>
     </p>
+
     <p class="container">
-    STATS:
-    Height: 5'5 (LIE)<br>
-    Weight: 20lbs (LIE)<br>
-    Age:44 (LIE)<br>
+        Hobbies: <br>
+        <li><a href="https://github.com/voicepaw/so-vits-svc-fork"> AI voice training</a></li>
+        <li><a href="https://odysee.com/@AlphaNerd:8"> Learning about technology</a></li>
+        <li><a href="https://cults3d.com/">3D printing and design</a></li>
+        STATS:
+        Height: 5'5 (LIE)<br>
+        Weight: 20lbs (LIE)<br>
+        Age: 44 (LIE)<br>
     </p>
-  </body>
+</body>
 </html>
