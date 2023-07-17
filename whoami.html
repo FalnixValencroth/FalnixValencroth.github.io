@@ -1,15 +1,64 @@
-<Html>
-  <h1>
-    
-  </h1>
-  
-  <body>
-    
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .media img, .media video {
+      max-width: 48%;
+      margin-bottom: 20px;
+    }
+  </style>
+  <title>My Webpage</title>
+</head>
+<body>
+  <h1>Welcome to my Webpage</h1>
+
+  <div class="container">
     <p>
       This is a test of this webpage.
       <a href="index.html">This should direct you back to the main page.</a>
     </p>
-    
-  </body>
-  
-</Html>
+
+    <div class="media">
+      <!-- Image placeholders -->
+      <img src="path_to_your_image1.jpg" alt="Description of image 1">
+      <img src="path_to_your_image2.jpg" alt="Description of image 2">
+
+      <!-- Video placeholders -->
+      <video controls>
+        <source src="path_to_your_video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="path_to_your_video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
