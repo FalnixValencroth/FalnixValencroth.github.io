@@ -61,7 +61,7 @@
 
         <button id="muteButton">Mute</button>
         <button id="pauseButton">Pause</button>
-        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.1">
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
 
         <script>
             const backgroundAudio = document.getElementById('backgroundAudio');
@@ -70,6 +70,7 @@
             const volumeControl = document.getElementById('volumeControl');
 
             backgroundAudio.volume = 0.1;
+            volumeControle.value = 0.1;
             
 
             muteButton.addEventListener('click', toggleMute);
