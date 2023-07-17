@@ -68,6 +68,8 @@
             const muteButton = document.getElementById('muteButton');
             const pauseButton = document.getElementById('pauseButton');
             const volumeControl = document.getElementById('volumeControl');
+
+            backgroundAudio.volume = 0.1
             
             muteButton.addEventListener('click', toggleMute);
             pauseButton.addEventListener('click', togglePause);
@@ -94,7 +96,6 @@
             }
 
             function setVolume() {
-                backgroundAudio.volume = 0.1
                 backgroundAudio.volume = volumeControl.value;
             }
         </script>
