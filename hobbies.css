@@ -8,7 +8,7 @@ body {
 
 .image-collage {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(3, 3fr); /* Adjust the number of columns as needed */
     gap: 10px;
     max-width: 800px;
     margin: 50px auto;
