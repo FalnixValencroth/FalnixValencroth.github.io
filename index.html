@@ -14,7 +14,7 @@
             <source src="mk_afterdark.webm" type="audio/webm">
         </audio>
 
-        <button id="pauseButton" style="background-image: url('img_home_button.gif');">Pause</button>
+        <button id="pauseButton">Pause</button>
         <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.1">
 
         <script>
@@ -31,10 +31,8 @@
             function togglePause() {
                 if (backgroundAudio.paused) {
                     backgroundAudio.play();
-                    pauseButton.textContent = 'Pause';
                 } else {
                     backgroundAudio.pause();
-                    pauseButton.textContent = 'Play';
                 }
             }
 
