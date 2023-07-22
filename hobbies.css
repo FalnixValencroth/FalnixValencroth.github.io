@@ -26,17 +26,17 @@ body {
 }
 
 .image-item img {
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 50%;
 }
 
 .image-item:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 h1, p {
     background-color: pink;
     color: white;
     text-align: center;
-    text-shadow: 2px 2px 2px;
+    text-shadow: 1px 1px 1px;
 }
