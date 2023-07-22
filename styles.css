@@ -9,7 +9,7 @@
 /* styles.css */
 
 /* Styles for the button */
-#muteButton {
+#pauseButton {
     background-image: url('img_home_button.gif'); /* Replace with your image file name */
     background-size: cover; /* Adjust the image size to cover the button */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -21,7 +21,7 @@
 }
 
 /* Styles for the button on hover */
-#muteButton:hover {
+#pauseButton:hover {
     opacity: 0.8; /* Reduce opacity when hovering to give a visual effect */
 }
 
