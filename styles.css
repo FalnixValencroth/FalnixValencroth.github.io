@@ -10,7 +10,7 @@
 
 /* Styles for the button */
 #muteButton {
-    background-image: url("img_home_button.gif"); /* Replace with your image file name */
+    background-image: url('img_home_button.gif'); /* Replace with your image file name */
     background-size: cover; /* Adjust the image size to cover the button */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     padding: 10px 20px; /* Add padding to the button for better appearance */
