@@ -1,0 +1,83 @@
+ <style>
+        .contact-form {
+    width: 80%;
+    margin: auto;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+/* styles.css */
+
+/* Styles for the button */
+#muteButton {
+    background-image: url("button-image.png"); /* Replace with your image file name */
+    background-size: cover; /* Adjust the image size to cover the button */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 10px 20px; /* Add padding to the button for better appearance */
+    border: none; /* Remove default button border */
+    color: white; /* Text color */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Styles for the button on hover */
+#muteButton:hover {
+    opacity: 0.8; /* Reduce opacity when hovering to give a visual effect */
+}
+
+.contact-form table {
+    width: 50%;
+}
+
+.contact-form td {
+    padding: 2px;
+}
+
+        body {
+            background-image: url('img_zen_space.gif');
+            background-color: #000000;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        title, h1{
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            display: flex;
+            list-style-position: inside;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav {
+            background-color: #f2f2f2;
+        }
+
+        nav ul {
+            background-size: contain;
+            background-align: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 50%;
+            width: 100%;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+    </style>
