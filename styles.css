@@ -34,6 +34,7 @@
 }
 
         body {
+            color: white;
             background-image: url('img_zen_space.gif');
             background-color: #000000;
             background-size: contain;
@@ -52,10 +53,12 @@
         }
         
         nav {
+            color: white;
             background-color: #f2f2f2;
         }
 
         nav ul {
+            color: white;
             background-size: contain;
             background-align: center;
             background-repeat: no-repeat;
