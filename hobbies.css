@@ -1,6 +1,6 @@
 body {
     background-color: pink;
-    color: black;
+    color: white;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fce4ec; /* Pastel pink background color */
@@ -33,7 +33,7 @@ body {
 }
 h1, p {
     background-color: pink;
-    color: black;
+    color: white;
     text-align: center;
     text-shadow: 2px 2px 2px;
 }
