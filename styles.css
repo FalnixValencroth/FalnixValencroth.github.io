@@ -41,20 +41,6 @@ body {
     opacity: 0.8;
 }
 
-.contact-form {
-    width: 80%;
-    margin: auto;
-    color: white;
-}
-
-.contact-form table {
-    width: 50%;
-}
-
-.contact-form td {
-    padding: 2px;
-}
-
 nav {
     background-color: #f2f2f2;
 }
