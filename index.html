@@ -1,109 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
- <style>
-        .contact-form {
-    width: 80%;
-    margin: auto;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-
-}
-
-.controls-container {
- display: flex;
- flex-direction: column;
- align-items: center;
-/* styles.css */
-
-/* Styles for the button */
-#pauseButton {
-    background-image: url('img_home_button.gif'); /* Replace with your image file name */
-    background-size: cover; /* Adjust the image size to cover the button */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    padding: 10px 20px; /* Add padding to the button for better appearance */
-    border: none; /* Remove default button border */
-    color: white; /* Text color */
-    font-size: 16px; /* Adjust font size as needed */
-    cursor: pointer; /* Change cursor on hover */
-}
-
-#pauseButton.paused {
-  background-image: url('img_home_button.gif');
-}
-
-/* Styles for the button on hover */
-#pauseButton:hover {
-    opacity: 0.8; /* Reduce opacity when hovering to give a visual effect */
-}
-
-.contact-form table {
-    width: 50%;
-}
-
-.contact-form td {
-    padding: 2px;
-}
-
-        body {
-            background-image: url('img_zen_space.gif');
-            background-color: #000000;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        title, h1{
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            display: flex;
-            list-style-position: inside;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        nav {
-            background-color: #f2f2f2;
-        }
-
-        nav ul {
-            background-size: contain;
-            background-align: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            height: 50%;
-            width: 100%;
-        }
-
-        nav li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        nav a:hover {
-            color: #ff0000;
-        }
-    </style>
-    <title class="container">Matthew Lyons' Webpage</title>
+    <title>Matthew Lyons' Webpage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>
-        Welcome to my webpage.
-    </h1>
+    <h1>Welcome to my webpage.</h1>
 
     <div class="controls-container">
         <audio id="backgroundAudio" autoplay loop>
             <source src="mk_afterdark.webm" type="audio/webm">
         </audio>
-
         <button id="pauseButton">Pause</button>
         <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.1">
 
@@ -112,11 +19,10 @@
             const pauseButton = document.getElementById('pauseButton');
             const volumeControl = document.getElementById('volumeControl');
 
-            backgroundAudio.volume = 0.1
-            
+            backgroundAudio.volume = 0.1;
+
             pauseButton.addEventListener('click', togglePause);
             volumeControl.addEventListener('input', setVolume);
-
 
             function togglePause() {
                 if (backgroundAudio.paused) {
@@ -140,55 +46,12 @@
             <li><a href="links_to_hobbies.html">Links to Hobbies</a></li>
         </ul>
     </nav>
-    <p style="color:white;"> To Get a hold of me feel free to use the form to drop off your information:
-</p>
-       <div class="contact-form">
-    <h2>Contact Form</h2>
-    <form>
-        <table>
-            <tr>
-                <td><label for="fname">First Name:</label></td>
-                <td><input type="text" id="fname" name="fname"></td>
-            </tr>
-            <tr>
-                <td><label for="lname">Last Name:</label></td>
-                <td><input type="text" id="lname" name="lname"></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" name="email"></td>
-            </tr>
-            <tr>
-                <td><label for="phone">Phone Number:</label></td>
-                <td><input type="tel" id="phone" name="phone"></td>
-            </tr>
-            <tr>
-                <td><label for="country">Country:</label></td>
-                <td><input type="text" id="country" name="country"></td>
-            </tr>
-            <tr>
-                <td><label for="city">City:</label></td>
-                <td><input type="text" id="city" name="city"></td>
-            </tr>
-            <tr>
-                <td><label for="subject">Subject:</label></td>
-                <td><input type="text" id="subject" name="subject"></td>
-            </tr>
-            <tr>
-                <td><label for="message">Message:</label></td>
-                <td><textarea id="message" name="message" rows="4" cols="30"></textarea></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="checkbox" id="terms" name="terms" value="agree">
-                    <label for="terms">I agree to the terms and conditions</label>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Submit"></td>
-            </tr>
-        </table>
-    </form>
-</div>
+
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form>
+            <!-- Your form fields here -->
+        </form>
+    </div>
 </body>
 </html>
