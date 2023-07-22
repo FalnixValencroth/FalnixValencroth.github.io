@@ -6,6 +6,11 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 
 }
+
+.controls-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 /* styles.css */
 
 /* Styles for the button */
