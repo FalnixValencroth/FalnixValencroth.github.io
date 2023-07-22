@@ -20,6 +20,10 @@
     cursor: pointer; /* Change cursor on hover */
 }
 
+#pauseButton.paused {
+  background-image: url('img_home_button.gif');
+}
+
 /* Styles for the button on hover */
 #pauseButton:hover {
     opacity: 0.8; /* Reduce opacity when hovering to give a visual effect */
