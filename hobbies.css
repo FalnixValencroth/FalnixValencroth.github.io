@@ -9,9 +9,10 @@ body {
 .image-collage {
     display: grid;
     grid-template-columns: repeat(3, 3fr); /* Adjust the number of columns as needed */
-    gap: 10px;
-    max-width: 800px;
+    gap: 5px;
+    max-width: 720;
     margin: 50px auto;
+    image-align: right;
 }
 
 .image-item {
@@ -22,12 +23,12 @@ body {
 }
 
 .image-item img {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
 .image-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 h1, p {
