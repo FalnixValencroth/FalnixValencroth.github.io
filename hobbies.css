@@ -3,7 +3,7 @@ html {
 }
 body {
     background-color: pink;
-    color: white;
+    color: black;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fce4ec; /* Pastel pink background color */
@@ -37,7 +37,6 @@ body {
 }
 h1, p {
     background-color: pink;
-    color: white;
+    color: black;
     text-align: center;
-    text-shadow: 1px 1px 1px;
 }
