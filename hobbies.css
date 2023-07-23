@@ -10,6 +10,7 @@ body {
 }
 
 .image-collage {
+     background-color: pink;
     display: grid;
     grid-template-columns: repeat(3, 3fr); /* Adjust the number of columns as needed */
     gap: 5px;
