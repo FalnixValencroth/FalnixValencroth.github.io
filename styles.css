@@ -45,6 +45,12 @@ button {
   cursor: pointer;
 }
 
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
 .operator {
   background-color: #ff9800;
   color: white;
