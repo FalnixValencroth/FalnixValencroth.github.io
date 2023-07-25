@@ -1,5 +1,5 @@
 html {
-     background-color: pink;
+     background-color: #fce4ec;
 }
 body {
     background-color: pink;
@@ -10,7 +10,7 @@ body {
 }
 
 .image-collage {
-     background-color: pink;
+     background-color: #fce4ec;
     display: grid;
     grid-template-columns: repeat(3, 3fr); 
     gap: 5px;
@@ -38,7 +38,7 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 h1, p {
-    background-color: pink;
+    background-color: #fce4ec;
     color: black;
     text-align: center;
 }
