@@ -6,13 +6,13 @@ body {
     color: black;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fce4ec; /* Pastel pink background color */
+    background-color: #fce4ec; 
 }
 
 .image-collage {
      background-color: pink;
     display: grid;
-    grid-template-columns: repeat(3, 3fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(3, 3fr); 
     gap: 5px;
     max-width: 720;
      height: auto;
@@ -28,6 +28,7 @@ body {
 }
 
 .image-item img {
+     max-width: 100%;
     width: auto;
     height: auto;
 }
@@ -41,3 +42,11 @@ h1, p {
     color: black;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+     img {
+          max-width: 100%
+          height: auto;
+     }
+}
+
