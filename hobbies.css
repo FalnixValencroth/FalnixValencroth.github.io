@@ -15,6 +15,7 @@ body {
     grid-template-columns: repeat(3, 3fr); /* Adjust the number of columns as needed */
     gap: 5px;
     max-width: 720;
+     height: auto;
     margin: auto;
     image-align: right;
 }
