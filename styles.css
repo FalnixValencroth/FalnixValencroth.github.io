@@ -5,6 +5,52 @@ body {
     color: #FFF;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* this is for the calculator */
+.calculator {
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+#display {
+  width: 100%;
+  font-size: 24px;
+  padding: 5px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.operator {
+  background-color: #ff9800;
+  color: white;
+}
+/* ^^^ this is for the calculator ^^^ */
+
 header {
     position: fixed;
     top: 0;
@@ -72,7 +118,6 @@ footer a {
     color: #FFF;
 }
 
-/* Additional styling to give the tactical feel */
 h1, h2 {
     text-shadow: 2px 2px 3px #000;
 }
