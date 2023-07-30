@@ -20,7 +20,7 @@ function calculateTotal() {
     if (discount === 'like') {
         totalCost *= 0.9; // 10% discount
     } else if (discount === 'hate') {
-        totalCost *= 0.9; // -10% discount (10% increase)
+        totalCost *= 1.1; // -10% discount (10% increase)
     }
 
     // Add the base cost after applying the discount
