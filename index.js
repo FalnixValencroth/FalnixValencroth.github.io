@@ -2,7 +2,6 @@ function calculateTotal() {
     const quantity = parseInt(document.getElementById('quantity').value);
     const price = parseFloat(document.getElementById('price').value);
     const type = document.getElementById('type').value;
-    const discount = document.getElementById('discount').value;
 
     let baseCost = 10; // Base cost for all types
 
@@ -16,11 +15,13 @@ function calculateTotal() {
     // Calculate the total cost based on the user-provided price
     let totalCost = price * quantity;
 
-    // Apply discount based on the selected discount option
-    if (discount === 'like') {
-        totalCost *= 0.9; // 10% discount
-    } else if (discount === 'hate') {
-        totalCost *= 1.1; // -10% discount (10% increase)
+    // Apply discount based on the quantity of items ordered
+    if (quantity <= 10) {
+        totalCost *= 0.95; // 5% discount
+    } else if (quantity <= 25) {
+        totalCost *= 0.90; // 10% discount
+    } else if (quantity >= 100) {
+        totalCost *= 0.85; // 15% discount
     }
 
     // Add the base cost after applying the discount
