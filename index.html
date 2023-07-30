@@ -30,19 +30,18 @@
         </section>
         <section id="self">
 <h2>Image Profit Calculator</h2>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Discount Calculator</title>
-</head>
-<body>
-    <form>
+   <form>
+
         <label for="quantity">Amount:</label>
         <input type="number" id="quantity" name="quantity" min="1" required>
         <br>
+
+  
         <label for="price">Price per unit:</label>
         <input type="number" id="price" name="price" min="0" step="0.01" required>
         <br>
+
+
         <label for="type">Type:</label>
         <select id="type" name="type">
             <option value="big">Big</option>
@@ -50,16 +49,11 @@
             <option value="small">Small</option>
         </select>
         <br>
-        <label for="discount">Discount:</label>
-        <select id="discount" name="discount">
-            <option value="like">I like you</option>
-            <option value="indifferent">I'm indifferent about you</option>
-            <option value="hate">I hate you</option>
-        </select>
-        <br>
+
         <button type="button" onclick="calculateTotal()">Calculate Total</button>
         <p>Total Cost: <span id="totalCost"></span></p>
     </form>
+
 
   <script src="index.js"></script>
     <footer>
