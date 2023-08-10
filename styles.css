@@ -87,11 +87,11 @@ nav a {
 }
 
 main {
-    padding-top: 60px; /* Adjust this value as needed */
+    padding-top: 20px; 
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap; 
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start; 
 }
 
 section {
