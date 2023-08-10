@@ -6,6 +6,7 @@ body {
 }
 
 body {
+margin-top: 20px;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
