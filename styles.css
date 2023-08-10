@@ -1,4 +1,5 @@
 body {
+    margin-top: 20px;
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #222, #444);
@@ -97,7 +98,7 @@ main {
 
 section {
     width: calc(33.33% - 40px); /* Adjust the width and margin as needed */
-    margin: 20px;
+    margin-top: 20px;
     box-sizing: border-box; /* Include padding and borders in the width calculation */
 }
 
